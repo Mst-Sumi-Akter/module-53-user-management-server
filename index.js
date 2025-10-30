@@ -24,7 +24,6 @@ app.get('/users',(req,res)=>{
 // data pathate post babohar kora hoy
 app.post('/users',(req, res)=>{
     console.log('post method called', req.body);//same name dite hbe
-
     const newUser = req.body;
     newUser.id = users.length + 1;
     users.push(newUser)
